@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//TODO: Clean up this script: Seperate into different classes, Use Enum for positions, Reduce repetition, State machine
 public class AnimatronicMovement : MonoBehaviour
 {
     [SerializeField] private string animatronicName;
