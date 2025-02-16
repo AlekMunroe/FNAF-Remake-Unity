@@ -15,10 +15,13 @@ public class BatteryController : MonoBehaviour
     private float _currentPower = 99f;
     private float _previousPower = 99f;
 
-    void Start()
+    void Awake()
     {
         instance = this;
-        
+    }
+    
+    void Start()
+    {
         StartCoroutine(DrainPower());
     }
 

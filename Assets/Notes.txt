@@ -1,0 +1,68 @@
+MOVEMENT PATTERNS
+Bonnie
+1A -> 1B, 5
+1B(1) -> 1B(2), 5
+1B(2) -> 1B(1), 2A, 5
+2A -> 2B, 3
+2B -> 3, (Door)
+3 -> 2A, (Door)
+5 -> 1B(1), 1B(2), 2A
+
+----------
+MOVEMENT TIMES
+                FREDDY, BONNIE, CHICA, FOXY
+Movement timers: 3.02, 4.97, 4.98, 5.01
+Maximum movements per night: 176, 107, 107, 106
+Camera stalled: Yes, No, No, Yes
+
+When the timer is finished, they have a chance to move. 
+A random number is generated between 1-20. 
+If the random number lands between 1 and the AI level, they will move to their next spot (randomised).
+
+----------
+
+AI LEVELS 
+Night 1:
+TIME = FREDDY, BONNIE, CHICA, FOXY
+12AM-1AM = 0, 0, 0, 0
+2AM = 0, 1, 0, 0
+3AM = 0, 2, 1, 1
+4AM = 0, 3, 2, 2
+
+Night 2:
+TIME = FREDDY, BONNIE, CHICA, FOXY
+12AM-2AM = 0, 3, 1, 1
+3AM = 0, 4, 2, 2
+4AM = 0, 5, 3, 3
+
+Night 3:
+TIME = FREDDY, BONNIE, CHICA, FOXY
+12AM-1AM = 1, 0, 5, 2
+2AM = 1, 1, 5, 2
+3AM = 1, 2, 6, 3
+4AM = 1, 3, 7, 4
+
+Night 4:
+TIME = FREDDY, BONNIE, CHICA, FOXY
+12AM-1AM = 1 or 2 (50/50 Chance), 2, 4, 6
+2AM = 1 or 2 (50/50) 3, 4, 6
+3AM = 1 or 2 (50/50) 4, 5, 7
+4AM = 1 or 2 (50/50), 5, 6, 8
+
+Night 5:
+TIME = FREDDY, BONNIE, CHICA, FOXY
+12AM-1AM = 3, 5, 7, 5
+2AM = 3, 6, 7, 5
+3AM = 3, 7, 8, 6
+4AM = 3, 8, 9, 7
+
+Night 6:
+TIME = FREDDY, BONNIE, CHICA, FOXY
+12AM-1AM = 4, 10, 12, 16
+2AM = 4, 11, 12, 16
+3AM = 4, 12, 13, 17
+4AM = 4, 13, 14, 18
+
+Night 7:
+TIME = FREDDY, BONNIE, CHICA, FOXY
+All = 20, 20, 20, 20

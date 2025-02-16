@@ -5,12 +5,18 @@ using TMPro;
 
 public class TimeController : MonoBehaviour
 {
+    public static TimeController instance;
     [SerializeField] private TMP_Text timeText;
-    private float _time;
+    private int _time;
 
     //12AM - 90 seconds
     //1AM-5AM - 89 seconds
     //6AM - Finish
+    void Awake()
+    {
+        instance = this;
+    }
+    
     void Start()
     {
         timeText.text = "12 AM";
@@ -43,5 +49,10 @@ public class TimeController : MonoBehaviour
         timeText.text = _time.ToString() + " AM";
 
         StartCoroutine(Timer());
+    }
+
+    public int currentTime()
+    {
+        return _time;
     }
 }

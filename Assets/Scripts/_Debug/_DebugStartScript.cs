@@ -19,6 +19,27 @@ public class _DebugStartScript : MonoBehaviour
 #endif
     }
 
+    void Update()
+    {
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Time.timeScale = Time.timeScale + 1;
+            //Debug.Log("Time changed to: " + Time.timeScale);
+        }
+        else if (Input.GetKeyDown(KeyCode.I))
+        {
+            Time.timeScale = Time.timeScale - 1;
+            //Debug.Log("Time changed to: " + Time.timeScale);
+        }
+        else if (Input.GetKeyDown(KeyCode.O))
+        {
+            Time.timeScale = 1;
+            //Debug.Log("Time reset to: " + Time.timeScale);
+        }
+#endif
+    }
+
     IEnumerator SetDebugDelay()
     {
         yield return new WaitForSeconds(0.01f);

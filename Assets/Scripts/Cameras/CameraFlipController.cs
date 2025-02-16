@@ -18,6 +18,8 @@ public class CameraFlipController : MonoBehaviour
         if (_isCameraEnabled)
         {
             //Disable camera
+            BatteryController.instance.DecreasePower();
+            
             _isCameraEnabled = false;
 
             DisableCameraScreens();
@@ -29,6 +31,8 @@ public class CameraFlipController : MonoBehaviour
         else
         {
             //Enable camera
+            BatteryController.instance.IncreasePower();
+            
             _isCameraEnabled = true;
 
             anim.Play("CameraFlipUp");
